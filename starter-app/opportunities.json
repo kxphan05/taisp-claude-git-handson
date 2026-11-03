@@ -1,6 +1,0 @@
-[
-  {"title": "SAMPLE: Summer AI Research Attachment", "type": "Research", "tags": ["Year 2", "AI", "Research"], "deadline": "2026-12-15", "link": "https://example.com/research"},
-  {"title": "SAMPLE: Tech Internship Fair", "type": "Internship", "tags": ["Year 3", "Software"], "deadline": "2026-11-20", "link": "https://example.com/internships"},
-  {"title": "SAMPLE: Merit Scholarship Round 2", "type": "Scholarship", "tags": ["All years"], "deadline": "2026-10-01", "link": "https://example.com/scholarship"},
-  {"title": "SAMPLE: Guest Talk on Responsible AI", "type": "Talk", "tags": ["All years", "AI"], "deadline": "2026-11-28", "link": "https://example.com/talk"}
-]

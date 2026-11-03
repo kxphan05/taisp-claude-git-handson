@@ -24,11 +24,7 @@ git push -u origin add-<your-name>
 ```
 
 ### 4. Open a pull request
-```bash
-gh pr create --repo kxphan05/taisp-claude-git-handson \
-  --title "Add <your-name>" --body "My first PR!"
-```
-(Or click the link Git prints after pushing.) This PR goes from **your fork** to the **original repo**.
+Go to your fork on GitHub and click the **Compare & pull request** banner (or the link Git printed after pushing). Give it a title and click **Create pull request**. This PR goes from **your fork** to the **original repo**.
 
 ### 5. Review a neighbour's PR
 On GitHub, open **Pull requests**, pick someone else's, go to **Files changed**, and leave one friendly comment. Reviewing is how teams catch bugs.

@@ -1,12 +1,4 @@
-// Loads opportunities.json and shows each one as a card.
-// fetch() needs a local server: run `python3 -m http.server` in this folder
-// and open http://localhost:8000
-
-async function load() {
-  const res = await fetch("opportunities.json");
-  const items = await res.json();
-  render(items);
-}
+// Shows each opportunity from data.js as a card.
 
 function render(items) {
   const list = document.getElementById("list");
@@ -24,4 +16,4 @@ function render(items) {
   }
 }
 
-load();
+render(OPPORTUNITIES);

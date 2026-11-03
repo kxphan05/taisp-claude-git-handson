@@ -12,15 +12,14 @@ branch -> prompt -> review diff -> test in browser -> commit -> repeat -> PR
 ```bash
 git switch main && git pull upstream main
 git switch -c feature-<what-you-build>
-cd starter-app && python3 -m http.server    # then open http://localhost:8000
 ```
-You should see a list of opportunities. Data lives in `starter-app/opportunities.json`. Open a second terminal for `claude` and git commands.
+Open `starter-app/index.html` in your browser (double-click it). You should see a list of opportunities. The data lives in `starter-app/data.js`. Use the terminal for `claude` and git commands.
 
 ## Pick one task (or more)
 
 **Easy**
 - Show a "Closed" badge on opportunities whose deadline has passed
-- Add 5 more sample opportunities to the JSON file
+- Add 5 more sample opportunities to `data.js`
 
 **Medium**
 - Add a search box that filters by title
@@ -43,8 +42,8 @@ You should see a list of opportunities. Data lives in `starter-app/opportunities
 ## Finish with a PR
 ```bash
 git push -u origin feature-<what-you-build>
-gh pr create --repo kxphan05/taisp-claude-git-handson
 ```
+Then open a pull request from your fork on GitHub, as in Lab 2.
 In the PR description, write what you built and **one thing Claude got wrong** (there's almost always one).
 
 ## Explain-it check

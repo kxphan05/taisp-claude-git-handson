@@ -16,16 +16,6 @@
 | Unstage | `git restore --staged <file>` |
 | Abort a merge | `git merge --abort` |
 
-## GitHub CLI
-
-| Goal | Command |
-|------|---------|
-| Log in | `gh auth login` |
-| Fork and clone | `gh repo fork <owner/repo> --clone` |
-| Open a PR | `gh pr create` |
-| List PRs | `gh pr list` |
-| View PR in browser | `gh pr view --web` |
-
 ## Claude Code
 
 | Goal | How |

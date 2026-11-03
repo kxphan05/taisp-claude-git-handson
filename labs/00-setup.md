@@ -5,8 +5,6 @@
 | Tool | Check it works | Install |
 |------|----------------|---------|
 | Git | `git --version` | https://git-scm.com/downloads |
-| GitHub CLI | `gh --version` | https://cli.github.com |
-| Python 3 | `python3 --version` | https://www.python.org/downloads |
 | Claude Code | `claude --version` | See https://docs.claude.com/en/docs/claude-code/setup |
 | A code editor | n/a | VS Code is a fine choice |
 
@@ -22,22 +20,21 @@ git config --global init.defaultBranch main
 
 Use the email tied to your GitHub account.
 
-## 3. Log in to GitHub
+## 3. Fork this repo
+
+Create a free account at https://github.com if you don't have one. Open https://github.com/kxphan05/taisp-claude-git-handson and click **Fork**. A **fork** is your own copy on GitHub; you can break things freely.
+
+## 4. Clone your fork
+
+Click the green **Code** button on *your* fork, copy the HTTPS URL, then:
 
 ```bash
-gh auth login
-```
-
-Pick GitHub.com, then follow the prompts (browser login is easiest).
-
-## 4. Fork and clone this repo
-
-```bash
-gh repo fork kxphan05/taisp-claude-git-handson --clone
+git clone <your-fork-url>
 cd taisp-claude-git-handson
+git remote add upstream https://github.com/kxphan05/taisp-claude-git-handson.git
 ```
 
-A **fork** is your own copy on GitHub. You can break things freely.
+The first push will ask you to sign in; use your GitHub username and a personal access token (GitHub > Settings > Developer settings > Tokens) or the browser login Git offers.
 
 ## 5. Log in to Claude Code
 
@@ -49,8 +46,6 @@ Follow the login prompt. Type `/exit` to leave for now. (No access? Ask a mentor
 
 ## Checkpoint
 
-- [ ] `git --version` and `gh auth status` both work
+- [ ] `git --version` and `claude --version` both work
 - [ ] You are inside the `taisp-claude-git-handson` folder (`pwd` to check)
 - [ ] `git remote -v` shows both `origin` (your fork) and `upstream` (the original)
-
-Missing `upstream`? Run `git remote add upstream https://github.com/kxphan05/taisp-claude-git-handson.git`.
